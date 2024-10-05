@@ -6,20 +6,32 @@ body {
     background-color: #f4f4f4;
     color: #333;
 }
-
-
 header {
-  background-color: #4CAF50;
-  color: white;
-  padding: 1em 0;
-  text-align: center;
-  font-family: "Georgia", serif; 
+    background-color: #333;
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+}
+nav ul {
+    list-style: none;
+    padding: 0;
 }
 
-h1, h2 {
-  font-family: "Verdana", sans-serif;
+nav ul li {
+    display: inline;
+    margin: 0 1rem;
 }
 
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+main {
+    padding: 2rem;
+}
+h2 {
+    color: #333;
+}
 section {
   padding: 2em;
   margin: 1em 0;
