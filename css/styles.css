@@ -1,47 +1,78 @@
-
-body {
-    font-family: 'Arial', sans-serif; 
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family:'Helvetica', sans-serif,
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
     color: #333;
-}
+  }
 header {
-    background-color: Blue;
+    background-color:grey;
     color: white;
-    padding: 1rem 0;
+    padding: 0.5m 0;
     text-align: center;
 }
-nav ul {
-    color: white;
+.header-fixed {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000
+  }
+
+nav {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem;
+}
+  nav ul {
+    list-style: none;
     padding: 0;
+    display: flex;
 }
 
 nav ul li {
-    display: inline;
     margin: 0 1rem;
 }
+
 nav ul li a {
-    color: white;
+    color:blue;
     text-decoration: none;
+    transition: all 1s ease;
+}
+
+nav ul li a:hover {
+    background-color: white;
+    text-decoration: underline;
+    transform: scale(1.1);
 }
 main {
     padding: 2rem;
 }
+
 h1 {
-    color: White;
+    color:black;
     text-align: center;
 }
-h2 {
+h2,h3 {
     text-align: center;
 }
 section {
-  padding: 2em;
-  margin: 1em 0;
-  background-color: white;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    float: left;
+    padding: 2em;
+    margin: 1em;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    clear: both;
 }
+
 article {
     text-align: center;
     background-color: white;
@@ -52,13 +83,27 @@ article {
 }
 
 article img {
-    width: 25%;
+    width: 20%;
     height: auto;
     border-radius: 5px;
 }
-footer {
-  text-align: center;
-  color: black;
-  bottom: 0;
-  font-family: 'Courier New', monospace;
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+ol{
+    text-align: left;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.footer {
+    text-align: center;
+    color: black;
+    bottom: 0;
+    font-family: 'Courier New', monospace;
+    width: 100%;
+    padding: 2rem;
 }
