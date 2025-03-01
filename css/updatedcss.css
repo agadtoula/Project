@@ -37,8 +37,17 @@
   nav ul li a {
     color: white;
     text-decoration: none;
-  }
-  
+    color: white;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: red;
+    background-color: darkblue;
+    text-decoration: underline;
+    transform: scale(1.1);
+}
   main {
     padding: 2rem;
   }
