@@ -103,3 +103,67 @@ ol{
     width: 100%;
     padding: 2rem;
 }
+#map {
+    height: 80%;  
+    width: 80%;
+    margin-top: 100px;  
+}
+html, body {
+        height: 100%;
+        margin: 0;
+}
+@media (min-width: 320px) {
+    body {
+        padding: 1rem;
+    }
+    nav ul {
+        flex-direction: column;
+    }
+    nav ul li {
+        margin: 0.5rem 0;
+    }
+    header {
+        padding: 0.5rem;
+    }
+    section {
+        margin: 0.5rem 0;
+    }
+}
+
+@media (min-width: 768px) {
+    body {
+        padding: 2rem;
+    }
+    nav ul {
+        flex-direction: row;
+    }
+    nav ul li {
+        margin: 0 1rem;
+    }
+    header {
+        padding: 1rem;
+    }
+    section {
+        margin: 1rem;
+    }
+}
+.slider {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slides img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover; 
+    display: none;
+}
+
+.slides img:first-child {
+    display: block;
+}
